@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+#initial .container{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel .container{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 70dvh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:inherit;
+    background-origin: border-box;
+}
+
+#img-1{
+    background-image: url('../images/cruzeiro.jpg');
+}
+
+#img-2{
+    background-image: url('../images/sunrise.jpg');
+}
+
+#img-3{
+    background-image: url('../images/valley.jpg');
+}
+
+
+
+@media (max-width: 800px){
+    .carousel-item{
+        height: 50dvh;
+    }
+}
